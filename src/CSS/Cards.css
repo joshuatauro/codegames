@@ -27,15 +27,40 @@
   font-family: Unbounded;
   color: white;
   font-size: 2.25rem;
+  margin-bottom: 20px;
 }
 .card__para {
   font-family: Poppins;
   color: #B4B1B1;
   line-height: 1.5rem;
-  margin-top: 20px;
 }
 .card__cont {
   margin-left: 20px;
+}
+@media (max-width: 700px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 0 0 20px;
+  }
+  .card__cont {
+    margin: 0;
+  }
+  .card__grad {
+    display: none;
+  }
+  .card__game {
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .card__para {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    text-align: center;
+  }
 }
 
 .rev {
@@ -69,15 +94,37 @@
   font-family: Unbounded;
   color: white;
   font-size: 2.25rem;
+  margin-bottom: 20px;
 }
 .rev__para {
   font-family: Poppins;
   color: #B4B1B1;
   line-height: 1.5rem;
-  margin-top: 20px;
 }
 .rev__cont {
   margin-right: 20px;
+}
+@media (max-width: 700px) {
+  .rev {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: auto;
+    padding: 0 0 20px;
+  }
+  .rev__grad {
+    display: none;
+  }
+  .rev__game {
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .rev__para {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    text-align: center;
+  }
 }
 
 .btn {
@@ -94,4 +141,11 @@
 .btn:hover {
   background-color: #38E1F4;
   color: black;
+}
+@media (max-width: 700px) {
+  .btn {
+    padding: 15px 20px;
+    font-size: 0.75rem;
+    width: 100%;
+  }
 }

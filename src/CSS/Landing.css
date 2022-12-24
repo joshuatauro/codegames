@@ -52,7 +52,7 @@
   position: absolute;
   top: 0;
   z-index: 2;
-  height: 90vh;
+  height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.374);
 }
@@ -108,7 +108,7 @@
 }
 .cg__landing__contact {
   background-color: #151515;
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .cg__landing__contact__container {
   width: 95%;
@@ -150,7 +150,7 @@
 .cg__landing__contact__form__btn button {
   padding: 20px 50px;
   font-family: Unbounded;
-  color: white;
+  color: #38E1F4;
   border: 2px solid #38E1F4;
   background-color: #1D3043;
   border-radius: 10px;
@@ -160,6 +160,65 @@
 .cg__landing__contact__form__btn button:hover {
   background-color: #38E1F4;
   color: black;
+}
+@media (max-width: 700px) {
+  .cg__landing {
+    height: 70vh;
+  }
+  .cg__landing__main {
+    font-size: 2rem;
+  }
+  .cg__landing__about {
+    font-size: 0.875rem;
+    width: 90%;
+  }
+  .cg__landing__register_btn {
+    padding: 10px 20px;
+  }
+  .cg__landing__welcome__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .cg__landing__welcome__col {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cg__landing__welcome__img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .cg__landing__welcome__para {
+    font-size: 0.875rem;
+    line-height: 1.35;
+    text-align: center;
+  }
+  .cg__landing__welcome__btn {
+    padding: 15px;
+    width: 100%;
+    font-size: 0.75rem;
+  }
+  .cg__landing__contact__container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .cg__landing__contact__container img {
+    display: none;
+  }
+  .cg__landing__contact__form__title {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  .cg__landing__contact__form__para {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .cg__landing__contact__form__btn button {
+    width: 100%;
+    padding: 15px 0;
+  }
 }
 
 .grouped {
@@ -214,4 +273,16 @@
 }
 .grouped textarea:focus {
   outline: none;
+}
+@media (max-width: 700px) {
+  .grouped input {
+    padding: 25px 20px;
+    font-size: 0.875rem;
+  }
+  .grouped label {
+    font-size: 0.75rem;
+  }
+  .grouped textarea {
+    font-size: 0.875rem;
+  }
 }

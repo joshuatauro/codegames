@@ -55,4 +55,13 @@
       color: black;
     }
   }
+  @media (max-width: 700px){
+    &__links{
+      display: none;
+    }
+    &__btn{
+      font-size: $xs;
+      padding: 10px 20px;
+    }
+  }
 }

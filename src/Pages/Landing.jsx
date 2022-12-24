@@ -8,6 +8,50 @@ const Landing = () => {
   const nameRef = useRef()
   const bodyRef = useRef()
 
+  const gamesObject = [
+    {
+      name: "Reverse Coding",
+      desc: "Reverse Coding is one of the contests organised by DeCoders for the last several years. The participants are expected to come up with a solution to a problem where no problem statement is given, they have to analyse the outputs against various inputs from an executable file. The contest is majorly done with the idea of checking the logic-building skills of the participants",
+      img: "https://c4.wallpaperflare.com/wallpaper/333/402/399/4k-avatar-2-poster-wallpaper-preview.jpg"
+    },
+    {
+      name: "Bug Bounty",
+      desc: "Bug Bounty is another one of the tech events in Code Games, where programmers are given buggy source code in different languages like C and C++ and are asked to fix the syntax as well as logical errors, compile it and run it successfully. This enables the participants to check not only their problem solving skills but also their basic knowledge of these coding languages.",
+      img: "https://images3.alphacoders.com/758/thumbbig-75839.webp"
+    },
+    {
+      name: "DevCon",
+      desc: "DevCon is where programmers are tested for their development skills like implementating form validation and integrating basic API features to the application. To provide an authentic development experience, googling is allowed. This contest aims at instilling development skills to motivate the students to branch out from coding and create running applications as well",
+      img: "https://images4.alphacoders.com/761/thumbbig-76146.webp"
+    },
+    {
+      name: "Reverse Coding",
+      desc: "Reverse Coding is one of the contests organised by DeCoders for the last several years. The participants are expected to come up with a solution to a problem where no problem statement is given, they have to analyse the outputs against various inputs from an executable file. The contest is majorly done with the idea of checking the logic-building skills of the participants",
+      img: "https://images4.alphacoders.com/758/thumbbig-75838.webp"
+    },
+    {
+      name: "Blind Coding",
+      desc: "Blind Coding is another one of the Code games competitions which is for the participants to have fun with coding. The programmer works on code without running it until completion. The catch in this game is that the monitors are off and they are asked to code without seeing what they are writing. Participants have fun with the silly mistakes making this one of the most popular contest of the series",
+      img: "https://images.alphacoders.com/521/thumbbig-521145.webp"
+    },
+    {
+      name: "Insta Fun",
+      desc: "Insta_Fun is an interesting way of engaging the students online on the social media platform. Last Code Games saw insta_fun in the form of Meme War where the students created hilarious memes on the engineering theme and had a great time with it from the comforts of their own spaces",
+      img: "https://images3.alphacoders.com/177/thumbbig-177515.webp"
+    },
+    {
+      name: "Valorant Tournament",
+      desc: "Having realised how much gaming helps students in teamwork, critical thinking and quick response, Valorant gaming competition is oragnised for the interested students to meet with fellow gamers in the college and have fun in a competitive sphere. Exciting cash prizes are awarded to the winning teams",
+      img: "https://images.alphacoders.com/441/thumbbig-441809.webp"
+    },
+    {
+      name: "DeCrypto",
+      desc: "Decrypto is another online contest held on the official Instagram page of DeCoders where participants are asked to solve challenging cryptic puzzles as well as their knowledge of current affairs is put to test. This helps the participants to keep up their general knowledge of computer science as well as learn more about the current technological advancements.",
+      img: "https://images8.alphacoders.com/521/thumbbig-521142.webp"
+    },
+
+  ]
+
   const onSubmitHandler = async(e) => {
     e.preventDefault();
     const userDetails = {
@@ -48,20 +92,15 @@ const Landing = () => {
         </div>
       </section>
       <section className="cg__landing__cards">
-        <Cards isRev={true} game={"DevCon"} img="https://images2.alphacoders.com/758/thumbbig-75842.webp" />
-        <Cards isRev={false} game={"Reverse Coding"} img="https://images3.alphacoders.com/758/thumbbig-75839.webp" />
-        <Cards isRev={true} game={"Bug Bounty"}  img="https://images4.alphacoders.com/761/thumbbig-76146.webp"/>
-        <Cards isRev={false} game={"Code Conqueror"} img="https://images4.alphacoders.com/758/thumbbig-75838.webp" />
-        <Cards isRev={true} game={"Valorant Tournament"} img="https://images.alphacoders.com/521/thumbbig-521145.webp" />
-        <Cards isRev={false} game={"Meme War"} img="https://images3.alphacoders.com/177/thumbbig-177515.webp" />
-        <Cards isRev={true} game={"Blind Coding"} img="https://images.alphacoders.com/441/thumbbig-441809.webp" />
-        <Cards isRev={false} game={"DeCrypto"} img="https://images8.alphacoders.com/521/thumbbig-521142.webp" />
+        {
+          gamesObject.map((it, index) => <Cards game={it.name} isRev={index%2 === 0} img={it.img} desc={it.desc}  />)
+        }
+
       </section>
       <section className="cg__landing__contact">
         <div className="cg__landing__contact__container">
-
-        <div className="cg__landing__contact__img__container">
-          <img src="https://images4.alphacoders.com/761/thumbbig-76146.webp" alt="" />
+          <div className="cg__landing__contact__img__container">
+            <img src="https://images4.alphacoders.com/761/thumbbig-76146.webp" alt="" />
           <div className=""></div>
         </div>
         <div className="cg__landing__contact__form">
@@ -83,7 +122,7 @@ const Landing = () => {
               <label htmlFor="">BODY</label>
             </div>
             <div className="cg__landing__contact__form__btn">
-              <button type="submit" className="cg__landing__contact__form__btn">Submit!</button>
+              <button type="submit" className="">Submit!</button>
             </div>
           </form>
         </div>

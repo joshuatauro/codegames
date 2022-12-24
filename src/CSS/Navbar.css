@@ -51,3 +51,12 @@
   background-color: #38E1F4;
   color: black;
 }
+@media (max-width: 700px) {
+  .cg__nav__links {
+    display: none;
+  }
+  .cg__nav__btn {
+    font-size: 0.75rem;
+    padding: 10px 20px;
+  }
+}
