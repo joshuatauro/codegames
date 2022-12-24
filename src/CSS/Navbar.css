@@ -1,16 +1,17 @@
 .cg__nav {
   width: 100%;
-  padding: 35px 0;
+  padding: 30px 0;
   background-color: #151515;
   font-family: Unbounded;
   color: white;
 }
 .cg__nav__container {
-  width: 95%;
+  width: 90%;
   max-width: 1500px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .cg__nav__title {
   font-size: 1.5rem;
@@ -35,7 +36,7 @@
   font-family: 200;
 }
 .cg__nav__btn {
-  padding: 0.5rem 1.9rem;
+  padding: 0.6rem 1.9rem;
   font-weight: 400;
   color: #38E1F4;
   background-color: #1D3043;

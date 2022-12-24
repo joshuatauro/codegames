@@ -1,0 +1,217 @@
+.cg__landing {
+  height: 90vh;
+  position: relative;
+  background-color: black;
+}
+.cg__landing__hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+.cg__landing__main {
+  font-family: Unbounded;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.cg__landing__about {
+  font-family: Poppins;
+  font-size: 1rem;
+  width: 50%;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+.cg__landing__register_btn {
+  padding: 15px 30px;
+  background-color: #1D3043;
+  border: 2px solid #38E1F4;
+  color: white;
+  font-family: Unbounded;
+  color: #38E1F4;
+  border-radius: 20px 0 20px 0;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.cg__landing__register_btn:hover {
+  background-color: #38E1F4;
+  color: black;
+}
+.cg__landing__img {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+}
+.cg__landing__gradient {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  height: 90vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.374);
+}
+.cg__landing__welcome {
+  padding: 80px 0;
+  background-color: #151515;
+}
+.cg__landing__welcome__container {
+  width: 90%;
+  margin: auto;
+}
+.cg__landing__welcome__title {
+  font-size: 4rem;
+  font-family: Unbounded;
+  color: white;
+  margin-bottom: 20px;
+}
+.cg__landing__welcome__col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.cg__landing__welcome__img {
+  object-fit: contain;
+  width: 90%;
+  height: auto;
+  justify-self: end;
+  border-radius: 10px;
+}
+.cg__landing__welcome__para {
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #B4B1B1;
+}
+.cg__landing__welcome__btn {
+  padding: 20px 30px;
+  border: 2px solid #38E1F4;
+  background-color: #1D3043;
+  font-family: Unbounded;
+  color: #38E1F4;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.cg__landing__welcome__btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #38E1F4;
+  color: black;
+}
+.cg__landing__cards {
+  background-color: #151515;
+}
+.cg__landing__contact {
+  background-color: #151515;
+  padding: 80px 0;
+}
+.cg__landing__contact__container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cg__landing__contact__img__container {
+  position: relative;
+}
+.cg__landing__contact__img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cg__landing__contact__img__container div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(21, 21, 21, 0.7775442941) 82%, rgb(21, 21, 21) 97%);
+  top: 0;
+}
+.cg__landing__contact__form__title {
+  font-family: Unbounded;
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+}
+.cg__landing__contact__form__para {
+  font-family: Poppins;
+  color: #B4B1B1;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+.cg__landing__contact__form__btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+.cg__landing__contact__form__btn button {
+  padding: 20px 50px;
+  font-family: Unbounded;
+  color: white;
+  border: 2px solid #38E1F4;
+  background-color: #1D3043;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+.cg__landing__contact__form__btn button:hover {
+  background-color: #38E1F4;
+  color: black;
+}
+
+.grouped {
+  position: relative;
+  margin-top: 10px;
+}
+.grouped label {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  font-family: Unbounded;
+  font-size: 0.875rem;
+  color: white;
+  transition: 200ms;
+}
+.grouped input:focus + label, .grouped input:valid + label {
+  top: 10px;
+  color: #B4B1B1;
+  font-size: 0.75rem;
+}
+.grouped textarea:focus + label, .grouped textarea:valid + label {
+  top: 10px;
+  color: #B4B1B1;
+  font-size: 0.75rem;
+}
+.grouped input {
+  background-color: #2a2a2a;
+  padding: 25px 20px;
+  border: transparent;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.grouped input:focus {
+  outline: none;
+}
+.grouped textarea {
+  background-color: #2a2a2a;
+  padding: 25px 20px;
+  border: transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1rem;
+  resize: none;
+}
+.grouped textarea:focus {
+  outline: none;
+}
