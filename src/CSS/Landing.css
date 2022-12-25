@@ -225,6 +225,11 @@
     width: 100%;
     padding: 15px 0;
   }
+  .cg__landing__contact__form_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .grouped {

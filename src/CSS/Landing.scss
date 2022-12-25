@@ -245,6 +245,11 @@
             padding: 15px 0;
           }
         }
+        &_grid {
+          display: flex;
+          flex-direction: column;
+          gap: 0
+        }
       }
 
     }
