@@ -36,6 +36,7 @@
     color: $cta;
     border-radius: 20px 0 20px 0;
     transition: all ease-in-out 0.3s;
+    text-decoration: none;
     cursor: pointer;
     &:hover{
       background-color: $cta;
@@ -140,6 +141,12 @@
         color: white;
         font-weight: $semibold 
         
+      }
+
+      &_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
       }
       &__para{
         font-family: $secondary;
@@ -247,6 +254,9 @@
 }
 
 .grouped{
+  &.col2{
+    grid-column: 2 / span 3;
+  }
   position: relative;
   margin-top: 10px;
   & label{
@@ -270,7 +280,7 @@
     font-size: $xs;
   }
 
-  & input{
+  & input, & select{
     background-color: $bgSecondary;
     padding: 25px 20px;
     border: transparent;
@@ -284,6 +294,22 @@
     &:focus{
       outline: none;
     }
+  }
+
+
+  &__icon{
+    // position: absolute;
+    & svg{
+      height: 20px;
+      position: absolute;
+      right: 20px;
+      top: 28px;
+    }
+  }
+
+  & select{
+    appearance: none;
+
   }
 
   & textarea{
@@ -302,6 +328,13 @@
     &:focus{
       outline: none;
     }
+  }
+
+  & option{
+    font-family: $primary;
+    color: $textSecondary;
+    font-weight: $medium;
+    font-size: $xs
   }
 
   @media (max-width: 700px){

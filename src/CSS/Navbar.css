@@ -1,6 +1,8 @@
 .cg__nav {
   width: 100%;
-  padding: 30px 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
   background-color: #151515;
   font-family: Unbounded;
   color: white;

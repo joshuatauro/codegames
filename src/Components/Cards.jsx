@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../CSS/Cards.css'
 const Cards = ({img, game, desc, isRev}) => {
   return (
@@ -12,7 +13,9 @@ const Cards = ({img, game, desc, isRev}) => {
         <p className={`${isRev?"rev__para":"card__para"}`}>
           {desc}
         </p>
-        <button className="btn">Know More</button>
+        <Link to={`/know-more/${game}`}>
+          <button className="btn">Know More</button>
+        </Link>
       </div>
     </div>
   )

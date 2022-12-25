@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import Cards from '../Components/Cards'
 import '../CSS/Landing.css'
 import pic from './wallpaperflare.com_wallpaper.jpg'
@@ -73,7 +74,7 @@ const Landing = () => {
       <div className="cg__landing__hero">
         <h1 className="cg__landing__main">Code Games</h1>
         <p className="cg__landing__about">A one of a kind event conducted by Team DeCoders which is a fusion of Technical and non-Technical games and competitions. Technical events include Reverse Coding, DevCon, Bug Bounty and Code Conqueror</p>
-        <button className="cg__landing__register_btn">Register now</button>
+        <Link to="/register" className="cg__landing__register_btn">Register now</Link>
       </div>
       <img className='cg__landing__img' src={pic} alt="" />
       <div className="cg__landing__gradient"></div>
@@ -109,13 +110,15 @@ const Landing = () => {
           </h1>
           <p className="cg__landing__contact__form__para">Feel free to drop any questions or doubt you have regarding the events down below, and we’ll be happy to help you at the earliest!</p>
           <form onSubmit={onSubmitHandler} className="cg__landing__contact__form_group">
-            <div className="grouped">
-              <input ref={emailRef} type="text" required  />
-              <label htmlFor="">EMAIL</label>
-            </div>
-            <div className="grouped">
-              <input ref={nameRef} type="text" required  />
-              <label  htmlFor="">NAME</label>
+            <div className="cg__landing__contact__form_grid">
+              <div className="grouped">
+                <input ref={emailRef} type="text" required  />
+                <label htmlFor="">EMAIL</label>
+              </div>
+              <div className="grouped">
+                <input ref={nameRef} type="text" required  />
+                <label  htmlFor="">NAME</label>
+              </div>
             </div>
             <div className="grouped text">
               <textarea ref={bodyRef} type="text" required  />

@@ -34,6 +34,7 @@
   color: #38E1F4;
   border-radius: 20px 0 20px 0;
   transition: all ease-in-out 0.3s;
+  text-decoration: none;
   cursor: pointer;
 }
 .cg__landing__register_btn:hover {
@@ -136,6 +137,11 @@
   color: white;
   font-weight: 600;
 }
+.cg__landing__contact__form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
 .cg__landing__contact__form__para {
   font-family: Poppins;
   color: #B4B1B1;
@@ -225,6 +231,9 @@
   position: relative;
   margin-top: 10px;
 }
+.grouped.col2 {
+  grid-column: 2/span 3;
+}
 .grouped label {
   position: absolute;
   top: 28px;
@@ -244,7 +253,7 @@
   color: #B4B1B1;
   font-size: 0.75rem;
 }
-.grouped input {
+.grouped input, .grouped select {
   background-color: #2a2a2a;
   padding: 25px 20px;
   border: transparent;
@@ -255,8 +264,17 @@
   font-weight: 500;
   font-size: 1rem;
 }
-.grouped input:focus {
+.grouped input:focus, .grouped select:focus {
   outline: none;
+}
+.grouped__icon svg {
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 28px;
+}
+.grouped select {
+  appearance: none;
 }
 .grouped textarea {
   background-color: #2a2a2a;
@@ -273,6 +291,12 @@
 }
 .grouped textarea:focus {
   outline: none;
+}
+.grouped option {
+  font-family: Unbounded;
+  color: #B4B1B1;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 @media (max-width: 700px) {
   .grouped input {
