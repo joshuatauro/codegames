@@ -50,6 +50,11 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+.cg__km__btn:hover {
+  background-color: #38E1F4;
+  color: black;
 }
 @media (max-width: 700px) {
   .cg__km__container {

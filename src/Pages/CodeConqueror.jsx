@@ -24,7 +24,7 @@ const CodeConqueror = () => {
             <p>INCHARGE:</p>
             <p>Joshua Tauro, 9686310532 </p>
           </div>
-          <Link className="">
+          <Link to="/register">
             <button className="cg__km__btn">
               Register
             </button>
