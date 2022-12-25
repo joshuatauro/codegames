@@ -4,8 +4,12 @@ import Navbar from './Components/Navbar';
 import Landing from './Pages/Landing';
 import { Routes, Route } from 'react-router-dom';
 import Register from './Pages/Register';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title="CodeGames"
+  }, [])
   return (
     <div className="App">
       <Navbar/>
