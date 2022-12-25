@@ -168,9 +168,6 @@
   color: black;
 }
 @media (max-width: 700px) {
-  .cg__landing {
-    height: 70vh;
-  }
   .cg__landing__main {
     font-size: 2rem;
   }
