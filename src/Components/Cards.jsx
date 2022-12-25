@@ -13,7 +13,7 @@ const Cards = ({img, game, desc, isRev}) => {
         <p className={`${isRev?"rev__para":"card__para"}`}>
           {desc}
         </p>
-        <Link to={`/know-more/${game}`}>
+        <Link to={`/know-more/${game.split(" ").join("-").toLowerCase()}`}>
           <button className="btn">Know More</button>
         </Link>
       </div>

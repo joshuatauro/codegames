@@ -1,0 +1,84 @@
+@import './variables';
+
+.cg__km{
+  background-color: $bg;
+  min-height: calc(100vh - 100px);
+  font-family: $secondary;
+  &__container{
+    width: 90%;
+    margin:auto;
+    color: white;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+  }
+  &__img_container{
+    & img{
+      width: 100%;
+    }
+  }
+  &__title{
+    font-family: $primary;
+    font-size: $xl7;
+  }
+  &__para{
+    font-family: $secondary;
+    line-height: 1.3;
+    color: $textSecondary;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  &__detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    & p:first-child{
+      font-family: $primary;
+      color: $cta;
+      text-underline-offset: 10px;
+      margin-right: 10px;
+    }
+    & p:last-child{
+      font-weight: $medium
+    }
+  }
+  &__btn{
+    margin-top: 20px;
+    color: $cta;
+    padding: 15px 30px;
+    background-color: $cta-fade;
+    border: 2px solid $cta;
+    font-family: $primary;
+    border-radius: 5px;
+    font-size: $base;
+    cursor: pointer;
+
+  }
+  @media(max-width: 700px){
+    &__container{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px 
+    }
+    &__title{
+      font-size: $xl4;
+      text-align: center;
+    }
+
+    &__para{
+      font-size: $sm;
+      text-align: center;
+    }
+    &__detail{
+      justify-content: center;
+      & p{
+        font-size: $sm;
+      }
+    }
+    &__btn{
+      width: 100%;
+    }
+  }
+}

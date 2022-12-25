@@ -26,8 +26,8 @@ const Landing = () => {
       img: "https://images4.alphacoders.com/761/thumbbig-76146.webp"
     },
     {
-      name: "Reverse Coding",
-      desc: "Reverse Coding is one of the contests organised by DeCoders for the last several years. The participants are expected to come up with a solution to a problem where no problem statement is given, they have to analyse the outputs against various inputs from an executable file. The contest is majorly done with the idea of checking the logic-building skills of the participants",
+      name: "Code Conqueror",
+      desc: "Code Conqueror is an intense but thrilling contest where the participants are tested for their knowledge of core CSE subjects, recent technological trends and mainly their Data Structure and Algorithms skills through competitive coding. In a team of two, participants compete to solve high level complex coding problems and win exciting cash prizes and goodies.",
       img: "https://images4.alphacoders.com/758/thumbbig-75838.webp"
     },
     {
