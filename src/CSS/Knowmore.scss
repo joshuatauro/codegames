@@ -2,7 +2,7 @@
 
 .cg__km{
   background-color: $bg;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   font-family: $secondary;
   &__container{
     width: 90%;
@@ -49,8 +49,11 @@
       font-weight: $medium
     }
   }
+
   &__btn{
     margin-top: 20px;
+    display: inline-block;
+    text-align: center;
     color: $cta;
     padding: 15px 30px;
     background-color: $cta-fade;
@@ -60,6 +63,7 @@
     font-size: $base;
     cursor: pointer;
     transition: all ease-in-out 200ms;
+    text-decoration: none;
     &:hover{
       background-color: $cta;
       color: black
@@ -91,6 +95,7 @@
     }
     &__btn{
       width: 100%;
+      
     }
   }
 }

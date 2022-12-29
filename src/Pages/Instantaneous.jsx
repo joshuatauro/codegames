@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../CSS/Knowmore.css'
-const ValorantTournament = () => {
+const Instantaneous = () => {
   return (
     <div className="cg__km">
       <div className="cg__km__container">
@@ -9,16 +9,12 @@ const ValorantTournament = () => {
           <img src="https://images3.alphacoders.com/177/thumbbig-177515.webp" alt="" />
         </div>
         <div className="cg__km__details">
-          <h1 className="cg__km__title">Valorant Tournament</h1>
-          <p className="cg__km__subtitle">" Unleash the gamer in you! "</p>
-          <p className="cg__km__para">Having realised how much gaming helps students in teamwork, critical thinking and quick response, Valorant gaming competition is oragnised for the interested students to meet with fellow gamers in the college and have fun in a competitive sphere. Exciting cash prizes are awarded to the winning teams.</p>
+          <h1 className="cg__km__title">Insta-ntaneous</h1>
+          <p className="cg__km__subtitle">" Solution there exists, but are you smart enough to find it? "</p>
+          <p className="cg__km__para">The most exciting Instagram crossword puzzle is here for you!! Check your technical vocabulary and instantaneously solve the crosswords to win exciting cash prizes!! Let's how quick and smart you are!!!</p>
           <div className="cg__km__detail">
             <p>TEAM TYPE:</p>
-            <p>TEAM OF 5 </p>
-          </div>
-          <div className="cg__km__detail">
-            <p>REGISTRATION FEE'S:</p>
-            <p>Rs 150 </p>
+            <p>INDIVIDUAL </p>
           </div>
           <div className="cg__km__detail">
             <p>INCHARGE:</p>
@@ -33,4 +29,4 @@ const ValorantTournament = () => {
   )
 }
 
-export default ValorantTournament
+export default Instantaneous

@@ -21,8 +21,8 @@ const Landing = () => {
       img: "https://images3.alphacoders.com/758/thumbbig-75839.webp"
     },
     {
-      name: "DevCon",
-      desc: "DevCon is where programmers are tested for their development skills like implementating form validation and integrating basic API features to the application. To provide an authentic development experience, googling is allowed. This contest aims at instilling development skills to motivate the students to branch out from coding and create running applications as well",
+      name: "Meme War",
+      desc: "Bring out your creativity and send us your mind-blowing original memes. Let's see if you're a pro in a making us laugh and bagging attractive cash prizes.",
       img: "https://images4.alphacoders.com/761/thumbbig-76146.webp"
     },
     {
@@ -36,8 +36,8 @@ const Landing = () => {
       img: "https://images.alphacoders.com/521/thumbbig-521145.webp"
     },
     {
-      name: "Insta Fun",
-      desc: "Insta_Fun is an interesting way of engaging the students online on the social media platform. Last Code Games saw insta_fun in the form of Meme War where the students created hilarious memes on the engineering theme and had a great time with it from the comforts of their own spaces",
+      name: "Insta-ntaneous",
+      desc: "The most exciting Instagram crossword puzzle is here for you!! Check your technical vocabulary and instantaneously solve the crosswords to win exciting cash prizes!! Let's how quick and smart you are!!!",
       img: "https://images3.alphacoders.com/177/thumbbig-177515.webp"
     },
     {
@@ -74,7 +74,9 @@ const Landing = () => {
       <div className="cg__landing__hero">
         <h1 className="cg__landing__main">Code Games</h1>
         <p className="cg__landing__about">A one of a kind event conducted by Team DeCoders which is a fusion of Technical and non-Technical games and competitions. Technical events include Reverse Coding, DevCon, Bug Bounty and Code Conqueror</p>
-        <Link to="/register" className="cg__landing__register_btn">Register now</Link>
+        <a href="https://www.yepdesk.com/embed/buy-tickets/63ac20bdc9e77c0001190664/private/um2b6vus9t" className="cg__landing__register_btn"  target="_blank" rel="noreferrer" >
+            Register
+          </a>
       </div>
       <img className='cg__landing__img' src={pic} alt="" />
       <div className="cg__landing__gradient"></div>

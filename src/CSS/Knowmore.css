@@ -1,6 +1,6 @@
 .cg__km {
   background-color: #151515;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   font-family: Poppins;
 }
 .cg__km__container {
@@ -47,6 +47,8 @@
 }
 .cg__km__btn {
   margin-top: 20px;
+  display: inline-block;
+  text-align: center;
   color: #38E1F4;
   padding: 15px 30px;
   background-color: #1D3043;
@@ -56,6 +58,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all ease-in-out 200ms;
+  text-decoration: none;
 }
 .cg__km__btn:hover {
   background-color: #38E1F4;

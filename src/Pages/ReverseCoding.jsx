@@ -14,7 +14,7 @@ const ReverseCoding = () => {
           <p className="cg__km__para">Reverse Coding is one of the contests organised by DeCoders for the last several years. The participants are expected to come up with a solution to a problem where no problem statement is given, they have to analyse the outputs against various inputs from an executable file. The contest is majorly done with the idea of checking the logic-building skills of the participants</p>
           <div className="cg__km__detail">
             <p>TEAM TYPE:</p>
-            <p>INDIVIDUAL </p>
+            <p>TEAM OF 2 </p>
           </div>
           <div className="cg__km__detail">
             <p>REGISTRATION FEE'S:</p>
@@ -24,11 +24,9 @@ const ReverseCoding = () => {
             <p>INCHARGE:</p>
             <p>Rohith C, 8431782443 </p>
           </div>
-          <Link to="/register">
-            <button className="cg__km__btn">
-              Register
-            </button>
-          </Link>
+          <a href="https://www.yepdesk.com/embed/buy-tickets/63ac20bdc9e77c0001190664/private/um2b6vus9t" className="cg__km__btn"  target="_blank" rel="noreferrer" >
+            Register
+          </a>
         </div>
       </div>
     </div>

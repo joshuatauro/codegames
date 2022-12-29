@@ -25,11 +25,9 @@ const CodeConqueror = () => {
             <p>Rohith C, 8431782443 </p>
           </div>
 
-          <Link to="/register">
-            <button className="cg__km__btn">
-              Register
-            </button>
-          </Link>
+          <a href="https://www.yepdesk.com/embed/buy-tickets/63ac20bdc9e77c0001190664/private/um2b6vus9t" className="cg__km__btn"  target="_blank" rel="noreferrer" >
+            Register
+          </a>
         </div>
       </div>
     </div>
