@@ -19,6 +19,11 @@
   font-family: Unbounded;
   font-size: 3rem;
 }
+.cg__km__subtitle {
+  font-family: Poppins;
+  font-size: 1.125rem;
+  margin-top: 10px;
+}
 .cg__km__para {
   font-family: Poppins;
   line-height: 1.3;
@@ -64,6 +69,10 @@
   }
   .cg__km__title {
     font-size: 2rem;
+    text-align: center;
+  }
+  .cg__km__subtitle {
+    font-size: 1rem;
     text-align: center;
   }
   .cg__km__para {

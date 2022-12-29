@@ -47,7 +47,7 @@ const Landing = () => {
     },
     {
       name: "DeCrypto",
-      desc: "Decrypto is another online contest held on the official Instagram page of DeCoders where participants are asked to solve challenging cryptic puzzles as well as their knowledge of current affairs is put to test. This helps the participants to keep up their general knowledge of computer science as well as learn more about the current technological advancements.",
+      desc: "Decrypto is a technical contest where programmers are tested for their analytical and logical skills, through breaking a series of encrypted code segments and finally placing all together to get the final outcome....To provide an authentic programming experience, googling is allowed. (more surprises awaits you....)",
       img: "https://images8.alphacoders.com/521/thumbbig-521142.webp"
     },
 

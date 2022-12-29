@@ -10,18 +10,20 @@ const BlindCoding = () => {
         </div>
         <div className="cg__km__details">
           <h1 className="cg__km__title">Blind Coding</h1>
-          <p className="cg__km__para">Bug Bounty is another one of the tech events in Code Games, where programmers are given buggy source code in different languages like C and C++ and are asked to fix the syntax as well as logical errors, compile it and run it successfully. This enables the participants to check not only their problem solving skills but also their basic knowledge of these coding languages.</p>
+          <p className="cg__km__subtitle">"Code simple but with your monitors shut"</p>
+          <p className="cg__km__para">Blind Coding is another one of the Code games competitions which is for the participants to have fun with coding. The programmer works on code without running it until completion. The catch in this game is that the monitors are off and they are asked to code without seeing what they are writing. Participants have fun with the silly mistakes making this one of the most popular contest of the series</p>
+          
           <div className="cg__km__detail">
             <p>TEAM TYPE:</p>
             <p>INDIVIDUAL </p>
           </div>
           <div className="cg__km__detail">
             <p>REGISTRATION FEE'S:</p>
-            <p>Rs 50 </p>
+            <p>Rs 20 </p>
           </div>
           <div className="cg__km__detail">
             <p>INCHARGE:</p>
-            <p>Joshua Tauro, 9686310532 </p>
+            <p>Rohith C, 9686310532 </p>
           </div>
           <Link to="/register">
             <button className="cg__km__btn">

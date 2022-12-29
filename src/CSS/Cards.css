@@ -43,7 +43,7 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
-    padding: 0 0 20px;
+    padding: 0 0 60px;
   }
   .card__cont {
     margin: 0;
@@ -110,7 +110,7 @@
     flex-direction: column-reverse;
     width: 90%;
     margin: auto;
-    padding: 0 0 20px;
+    padding: 0 0 60px;
   }
   .rev__grad {
     display: none;

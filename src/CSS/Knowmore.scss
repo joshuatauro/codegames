@@ -23,6 +23,11 @@
     font-family: $primary;
     font-size: $xl7;
   }
+  &__subtitle{
+    font-family: $secondary;
+    font-size: $lg;
+    margin-top: 10px;
+  }
   &__para{
     font-family: $secondary;
     line-height: 1.3;
@@ -70,7 +75,10 @@
       font-size: $xl4;
       text-align: center;
     }
-
+    &__subtitle{
+      font-size: $base;
+      text-align:center;
+    }
     &__para{
       font-size: $sm;
       text-align: center;
